@@ -10,7 +10,7 @@
 			padding-left: 3px;
 			margin: 0px;
 			}
-		.text {font-family: arial;
+		.normal {font-family: arial;
 			font-size: 13px; 
 			padding-left: 2px;
 			margin-top: 0px;
@@ -38,22 +38,49 @@
 		<h1 style="font-family: arial; color: grey;"><img class="header" src="https://pngimg.com/uploads/cursor/cursor_PNG102.png" style="width: 17px;"> Natuur open onderzoek</h1>
 	</div>
 
-    <p class="text">
-        </p><p class="titel">Hoofdvraag<br></p><p class="text">
+    
+    <p class="normal">
+        </p><p class="titel">Onderzoeksverslag<br></p><p class="normal">
+        </p><p class="kop">Adam, Cas & Simon (3C&D)<br></p><p class="normal">
+        <br>
+        </p><p class="kop">Hoofdvraag: <br></p><p class="normal">
         Onze hoofdvraag was: Hoe kan je een Raspberry pi opstellen voor een <br>
         server die een site geeft bij het benaderen en die veilig is.<br>
         <br>
         Om die vraag te kunnen beantwoorden hadden we ook een paar theorie en praktijk vragen.<br>
         <br>
-        </p><p class="kop">Theorie vragen<br></p><p class="text">
-        &nbsp;&nbsp;&nbsp;1.&nbsp;Wie&nbsp;of&nbsp;wat&nbsp;is&nbsp;een&nbsp;web&nbsp;host?<br>
-        &nbsp;&nbsp;&nbsp;2.&nbsp;Hoe&nbsp;staat&nbsp;een&nbsp;site&nbsp;opgeslagen&nbsp;op&nbsp;een&nbsp;server(raspberry&nbsp;Pi)?<br>
-        &nbsp;&nbsp;&nbsp;3.&nbsp;Hoe&nbsp;communiceert&nbsp;de&nbsp;server&nbsp;met&nbsp;de&nbsp;gebruiker&nbsp;en&nbsp;andersom?<br>
+        </p><p class="kop">Theorie vragen:<br></p><p class="normal">
+        &nbsp;&nbsp;&nbsp;1.&nbsp;Wie&nbsp;of&nbsp;wat&nbsp;is&nbsp;een&nbsp;webhost?<br>
+        &nbsp;&nbsp;&nbsp;2.&nbsp;Hoe&nbsp;staat&nbsp;een&nbsp;site&nbsp;opgeslagen&nbsp;op&nbsp;een&nbsp;server&nbsp;(raspberry&nbsp;Pi)?<br>
+        &nbsp;&nbsp;&nbsp;3.&nbsp;Hoe&nbsp;communiceert&nbsp;de&nbsp;site&nbsp;met&nbsp;de&nbsp;gebruiker&nbsp;en&nbsp;andersom?<br>
         <br>
-        </p><p class="kop">Praktijk vragen<br></p><p class="text">
-        &nbsp;&nbsp;&nbsp;1.Hoe&nbsp;stel&nbsp;je&nbsp;de&nbsp;router&nbsp;goed&nbsp;in?<br>
-        &nbsp;&nbsp;&nbsp;2.Hoe&nbsp;koppel&nbsp;je&nbsp;een&nbsp;domeinnaam?<br>
-        &nbsp;&nbsp;&nbsp;3.Hoe&nbsp;zorg&nbsp;je&nbsp;voor&nbsp;een&nbsp;werkende&nbsp;server?
+        </p><p class="kop">Praktijkvragen:<br></p><p class="normal">
+        &nbsp;&nbsp;&nbsp;1.&nbsp;Hoe&nbsp;stel&nbsp;je&nbsp;de&nbsp;router&nbsp;goed&nbsp;in?<br>
+        &nbsp;&nbsp;&nbsp;2.&nbsp;Hoe&nbsp;koppel&nbsp;je&nbsp;een&nbsp;domeinnaam?<br>
+        &nbsp;&nbsp;&nbsp;3.&nbsp;Hoe&nbsp;zorg&nbsp;je&nbsp;voor&nbsp;een&nbsp;werkende&nbsp;server?<br>
+        <br>
+        </p><p class="kop">Theorie vraag 1: Wie of wat is een webhost?<br></p><p class="normal">
+        Webhosting is een dienst om informatie op te slaan die dan toegankelijk is vanaf buiten. Wat het eigenlijk is is dat je de bestanden met de regels code opslaat op die computer. En dat die dan via een URL (Bijv. google.nl) te bezoeken is.<br>
+        <br>
+        </p><p class="kop">Theorie vraag 2: Hoe staat een site opgeslagen op een server (raspberry Pi)?<br></p><p class="normal">
+        Op de server staat de site (dus als bestanden met regels code) opgeslagen op een harde schijf. (opslag). De site bestaat uit een front en een backend. De front-end is wat de gebruiker te zien krijgt, denk aan animaties lay-out plaatjes en tekst voor de gebruiker. De backend is alle berekeningen en versturen en ontvangen van informatie en dergelijken. Alles wat nodig is voor de site, maar wat de gebruiker niet ziet behoort dus tot de backend.<br>
+        <br>
+        </p><p class="kop">Theorie vraag 3: Hoe communiceert de site met de gebruiker en andersom?<br></p><p class="normal">
+        De site en gebruiker communiceren over het World Wide Web denk aan WWW.xxxxx.com.<br>
+        Dit doen ze door het verzenden van pakketjes met informatie naar elkaar. Bijvoorbeeld wat een gebruiker heeft ingevoerd. Als er in de URL http:// staat dan zijn die pakketjes in te zien als ze worden onderschept. Staat er https:// (met dus een s erbij) dan worden de pakketjes versleuteld. En zijn ze dus niet te lezen als ze onderschept worden. Let dus altijd op dat als je prive zaken wilt versturen op een site dat er aan het begin van de URL https:// staat.<br>
+        <br>
+        </p><p class="kop">Praktijk vraag 1: Hoe stel je de router goed in?<br></p><p class="normal">
+        De router moet je zo instellen dat de server (in dit geval raspberry Pi) voor de verdedigingslinie zit. En dus te bezoeken vanuit buitenaf. Alles wat achter de verdedigingslinie zit is alleen te zien van binnen het netwerk. Als de router dus niet goed is ingesteld kan je op je eigen netwerk de site bekijken, maar niet vanuit buitenaf.<br>
+        <br>
+        </p><p class="kop">Praktijk vraag 2: Hoe koppel je een domein naam?<br></p><p class="normal">
+        Dit doe je door middel van een DNS-server. Een DNS-server is eigenlijk een groot telefoonboek voor sites. Want eigenlijk heeft eigen site zijn eigen IP-adres (in ons voorbeeld het telefoonnummer), maar omdat het zo lastig is die te onthouden heb je namen voor sites. Dus als je www.google.com intypt dan zoekt die DNS-server naar het telefoon nummer dat bij die naam hoort en dan stuur die DNS server je naar het juiste telefoon nummer. (In het echt is het dus een IP-adres i.p.v. een telefoonnummer, maar dat was voor het voorbeeld.<br>
+        <br>
+        </p><p class="kop">Praktijk vraag 3: Hoe zorg je voor een werkende server?<br></p><p class="normal">
+        Eerst moet je een besturingssysteem downloaden en installeren op de server. (Een besturingssysteem is zoiets als Windows of Mac OS X) Daarna moet je ervoor zorgen dat als je die server benaderd die de juiste regels code doorstuurt hier heb je programmatjes voor. Die moet je ook installeren.<br>
+        <br>
+        Die regels code staan opgeslagen in bestanden. Deze bestanden hebben wij in ons geval op een andere site opgeslagen (Git Hub) dit is een site voor programmeurs en software bouwers. Hierdoor konden we vanaf onze laptops de bestanden daarop zetten. En als de Server aanstaat haalt die de bestanden van die site en is de site altijd up-to-date.<br>
+        <br>
+        </p>
     </p>
 
 </body>
