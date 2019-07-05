@@ -111,12 +111,13 @@
 		 <br>
         </p><p class="subkop">Praktijk vraag 3: Hoe zorg je voor een werkende server?<br></p><p class="normal">
        Hoe zorg je voor een werkende server?
-       <ol>
+       <div class="normal">
+       <ol >
        <li> Flash het sd-kaartje van de pi. Je kan hier een programaatje genaamd Etcher. Dit programma maakt het een stuk makkelijker.</li>    
        <li> Installeer een server op je pi hier gebruiken wij Apache Server voor. Dit programma zorgt ervoor dat als er een verzoek om een resource binnenkomt, dat er dan een antwoord op dat verzoek verstuurd. Bijvoorbeeld een bestand.</li> 
        <li> Om het verkeer op de site veilig te maken heb je een SSL-certificaat nodig. Dit certificaat zorgt ervoor dat de connectie tussen de gebruiker en de site versleuteld is.</li>
        <li> Stel je router zo in dat de server berijkbaar is van buiten, door alleen bepaalde poorten door te laten zorg je voor toegenomen veiligheid op de server. Ook is het handig als je de server buiten je interne firewall plaatst(mits het niet al te belangrijke informatie bevat). Er moet ook zo min mogelijk communicatie plaats vinden tussen de server en jouw thuis netwerk, want dan is het een stuk makkelijker voor hackers om binnen te dringen in je LAN-netwerk.<br></li>
-       </ol
+       </ol>
        <br>
        In github werken maakt alles een stuk makkelijker, vooral als je met een team van mensen werkt. Maar hoe zorg je ervoor dat alles wat je op github pushed ook echt op de site terecht komt?
        <ol>
@@ -124,6 +125,7 @@
        <li> Maak in github een project voor je server aan, maak hierin een mapje aan waar je alle code in gaat zetten.</li>
        <li> Om te zorgen dat je website altijd up to date blijft moet je het project github clonen naar je server. Dit doe je door het git mapje te openen in een terminal op je server, en dit commando in te voeren git clone "https://github.com/jouw-team/jouw-project.git"</li>
        </ol>
+       </div>
        
         
         </p>
