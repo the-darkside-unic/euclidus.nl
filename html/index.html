@@ -24,6 +24,21 @@
 
 		.kop {font-family: arial;
 			font-size: 20px; 
+			font-weight: bold;
+			padding-left: 2px;
+			margin-top: 0px;
+			margin-bottom: 0px;}
+			
+		.subkop {font-family: arial;
+			font-size: 18px;  
+			font-weight: bold;
+			padding-left: 2px;
+			margin-top: 0px;
+			margin-bottom: 0px;}
+			
+		.subsubkop {font-family: arial;
+			font-size: 15px;  
+			font-weight: bold;
 			padding-left: 2px;
 			margin-top: 0px;
 			margin-bottom: 0px;}
@@ -41,7 +56,7 @@
     
     <p class="normal">
         </p><p class="titel">Onderzoeksverslag<br></p><p class="normal">
-        </p><p class="kop">Adam, Cas & Simon (3C&D)<br></p><p class="normal">
+        </p><p class="kop">Adam, Cas en Simon (3C&D)<br></p><p class="normal">
         <br>
         </p><p class="kop">Hoofdvraag: <br></p><p class="normal">
         Onze hoofdvraag was: Hoe kan je een Raspberry pi opstellen voor een <br>
@@ -49,15 +64,9 @@
         <br>
         Om die vraag te kunnen beantwoorden hadden we ook een paar theorie en praktijk vragen.<br>
         <br>
-        </p><p class="kop">Theorie vragen:<br></p><p class="normal">
-        &nbsp;&nbsp;&nbsp;1.&nbsp;Wie&nbsp;of&nbsp;wat&nbsp;is&nbsp;een&nbsp;webhost?<br>
-        &nbsp;&nbsp;&nbsp;2.&nbsp;Hoe&nbsp;staat&nbsp;een&nbsp;site&nbsp;opgeslagen&nbsp;op&nbsp;een&nbsp;server&nbsp;(raspberry&nbsp;Pi)?<br>
-        &nbsp;&nbsp;&nbsp;3.&nbsp;Hoe&nbsp;communiceert&nbsp;de&nbsp;site&nbsp;met&nbsp;de&nbsp;gebruiker&nbsp;en&nbsp;andersom?<br>
-        <br>
-        </p><p class="kop">Praktijkvragen:<br></p><p class="normal">
-        &nbsp;&nbsp;&nbsp;1.&nbsp;Hoe&nbsp;stel&nbsp;je&nbsp;de&nbsp;router&nbsp;goed&nbsp;in?<br>
-        &nbsp;&nbsp;&nbsp;2.&nbsp;Hoe&nbsp;koppel&nbsp;je&nbsp;een&nbsp;domeinnaam?<br>
-        &nbsp;&nbsp;&nbsp;3.&nbsp;Hoe&nbsp;zorg&nbsp;je&nbsp;voor&nbsp;een&nbsp;werkende&nbsp;server?<br>
+        </p><p class="kop">Theorie vragen<br></p><p class="normal">
+        
+        
         <br>
         </p><p class="kop">Theorie vraag 1: Wie of wat is een webhost?<br></p><p class="normal">
         Webhosting is een dienst om informatie op te slaan die dan toegankelijk is vanaf buiten. Wat het eigenlijk is is dat je de bestanden met de regels code opslaat op die computer. En dat die dan via een URL (Bijv. google.nl) te bezoeken is.<br>
@@ -69,17 +78,54 @@
         De site en gebruiker communiceren over het World Wide Web denk aan WWW.xxxxx.com.<br>
         Dit doen ze door het verzenden van pakketjes met informatie naar elkaar. Bijvoorbeeld wat een gebruiker heeft ingevoerd. Als er in de URL http:// staat dan zijn die pakketjes in te zien als ze worden onderschept. Staat er https:// (met dus een s erbij) dan worden de pakketjes versleuteld. En zijn ze dus niet te lezen als ze onderschept worden. Let dus altijd op dat als je prive zaken wilt versturen op een site dat er aan het begin van de URL https:// staat.<br>
         <br>
-        </p><p class="kop">Praktijk vraag 1: Hoe stel je de router goed in?<br></p><p class="normal">
-        De router moet je zo instellen dat de server (in dit geval raspberry Pi) voor de verdedigingslinie zit. En dus te bezoeken vanuit buitenaf. Alles wat achter de verdedigingslinie zit is alleen te zien van binnen het netwerk. Als de router dus niet goed is ingesteld kan je op je eigen netwerk de site bekijken, maar niet vanuit buitenaf.<br>
         <br>
-        </p><p class="kop">Praktijk vraag 2: Hoe koppel je een domein naam?<br></p><p class="normal">
-        Dit doe je door middel van een DNS-server. Een DNS-server is eigenlijk een groot telefoonboek voor sites. Want eigenlijk heeft eigen site zijn eigen IP-adres (in ons voorbeeld het telefoonnummer), maar omdat het zo lastig is die te onthouden heb je namen voor sites. Dus als je www.google.com intypt dan zoekt die DNS-server naar het telefoon nummer dat bij die naam hoort en dan stuur die DNS server je naar het juiste telefoon nummer. (In het echt is het dus een IP-adres i.p.v. een telefoonnummer, maar dat was voor het voorbeeld.<br>
+        </p><p class="kop">Praktijkvragen<br></p><p class="normal">
+        <br><br>
+        </p><p class="subkop">Praktijk vraag 1: Hoe stel je de router goed in?<br></p><p class="normal">
+        Praktijk verslag 
+        Hoe stel je de router goed in?
+        Zet de router aan doe de LAN-kabel erin doe de andere kant in je server (de raspberry pi). Maar dat is nog niet alles ook zal je moeten port forwarden.
         <br>
-        </p><p class="kop">Praktijk vraag 3: Hoe zorg je voor een werkende server?<br></p><p class="normal">
-        Eerst moet je een besturingssysteem downloaden en installeren op de server. (Een besturingssysteem is zoiets als Windows of Mac OS X) Daarna moet je ervoor zorgen dat als je die server benaderd die de juiste regels code doorstuurt hier heb je programmatjes voor. Die moet je ook installeren.<br>
+        Ook moet je ervoor zorgen dat de server buiten de interne firewall van je thuis netwerk staat. Anders kunnen hackers zo, vanuit je server je LAN-netwerk binnendringen. 
+        Door je server buiten de firewall te plaatsen kan je aanvallen ook snel herkennen en afslaan. Je moet er natuurlijk wel voor zorgen dat er niet belangrijke dingen op de server staan, 
+        want er is natuurlijk geen firewall om mensen die die informatie willen hebben tegen te houden. 
+        </p>
+        <br><p class="subsubkop">Port Forwarden<br></p><p class="normal">
+        Port forwarden 
+        Port forwarding, ook wel port mapping genoemd, is een methode voor het doorsturen van een netwerkpoort van het ene netwerkknooppunt naar het andere.
+        Met deze techniek kan een externe gebruiker van buitenaf een poort op een privé-IP-adres (binnen een LAN) bereiken met behulp van een NAT-compatibele router. .<br>
         <br>
-        Die regels code staan opgeslagen in bestanden. Deze bestanden hebben wij in ons geval op een andere site opgeslagen (Git Hub) dit is een site voor programmeurs en software bouwers. Hierdoor konden we vanaf onze laptops de bestanden daarop zetten. En als de Server aanstaat haalt die de bestanden van die site en is de site altijd up-to-date.<br>
-        <br>
+        </p><p class="subkop">Praktijk vraag 2: Hoe koppel je een hostnaam<br></p><p class="normal">
+        Hoe koppel je een hostnaam? 
+
+		 Elke computer die op het internet aangesloten is, is benaderbaar door een 12 cijferig IP-adres. 
+		 Maar omdat dat niet zo makkelijk te onthouden is kan je jouw IP-adres een naam geven. Dit heet een hostnaam.
+		 <br>
+		 Om te zorgen dat deze naam ook echt verwijst naar het goede IP-adres, word het opgeslagen op een zogenoemde DNS.
+		 DNS zijn grote databases waar opgeslagen staat welke naam bij welk IP hoort. Om een hostnaam te koppelen ga je naar een zogenaamde DNS-provider. 
+		 Soms kosten deze geld, maar dat hoeft niet. Wij gebruiken Trans ip.<br>
+		 <br> 
+		 </p><p class="subsubkop">SSH<br></p><p class="normal">
+		 Via SSH (Secure Shell) kan je aanloggen op een systeem vanuit een andere computer. Dit is erg handig als je server op een externe locatie is.
+		 Je kan bijvoorbeeld met SSH aanloggen op de raspberry pi vanuit school terwijl de pi thuis staat. .<br>
+		 <br>
+        </p><p class="subkop">Praktijk vraag 3: Hoe zorg je voor een werkende server?<br></p><p class="normal">
+       Hoe zorg je voor een werkende server?
+       <ol>
+       <li> Flash het sd-kaartje van de pi. Je kan hier een programaatje genaamd Etcher. Dit programma maakt het een stuk makkelijker.</li>    
+       <li> Installeer een server op je pi hier gebruiken wij Apache Server voor. Dit programma zorgt ervoor dat als er een verzoek om een resource binnenkomt, dat er dan een antwoord op dat verzoek verstuurd. Bijvoorbeeld een bestand.</li> 
+       <li> Om het verkeer op de site veilig te maken heb je een SSL-certificaat nodig. Dit certificaat zorgt ervoor dat de connectie tussen de gebruiker en de site versleuteld is.</li>
+       <li> Stel je router zo in dat de server berijkbaar is van buiten, door alleen bepaalde poorten door te laten zorg je voor toegenomen veiligheid op de server. Ook is het handig als je de server buiten je interne firewall plaatst(mits het niet al te belangrijke informatie bevat). Er moet ook zo min mogelijk communicatie plaats vinden tussen de server en jouw thuis netwerk, want dan is het een stuk makkelijker voor hackers om binnen te dringen in je LAN-netwerk.<br></li>
+       </ol
+       <br>
+       In github werken maakt alles een stuk makkelijker, vooral als je met een team van mensen werkt. Maar hoe zorg je ervoor dat alles wat je op github pushed ook echt op de site terecht komt?
+       <ol>
+       <li> Maak een mapje aan op de server en noem deze git</li> 
+       <li> Maak in github een project voor je server aan, maak hierin een mapje aan waar je alle code in gaat zetten.</li>
+       <li> Om te zorgen dat je website altijd up to date blijft moet je het project github clonen naar je server. Dit doe je door het git mapje te openen in een terminal op je server, en dit commando in te voeren git clone "https://github.com/jouw-team/jouw-project.git"</li>
+       </ol>
+       
+        
         </p>
     </p>
 
